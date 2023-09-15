@@ -1,30 +1,23 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_number - prints an arbitrary integer using putchar
- *
- * @n: integer to print
- *
+ * print_number -prints an integer
+ * @n: input integer parameter
  * Return: void
  */
+
 void print_number(int n)
 {
-	unsigned int u, i;
+	unsigned int i = n;
 
 	if (n < 0)
 	{
-		u = -n;
-		_putchar('-');
+		_putchar(45);
+		i = -i;
 	}
-	else
+	if (i / 10)
 	{
-		u = n;
+		print_number(i / 10);
 	}
-
-	i = 1000000000;
-	do {
-		if (i <= u || i == 1)
-			_putchar(u / i % 10 + '0');
-		i /= 10;
-	} while (i != 0);
+	_putchar(i % 10 + '0');
 }
