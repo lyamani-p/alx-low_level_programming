@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- * Author: LYAMANI Aberrahmane
  * print_rev - prints a string in reverse, followed by a new line
  * @s: string to be printed
  */

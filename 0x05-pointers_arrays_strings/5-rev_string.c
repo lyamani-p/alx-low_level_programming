@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- * Author: LYAMANI Aberrahmane
  * rev_string - reverses a string
  * @s: string to be reversed
  */
